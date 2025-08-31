@@ -17,7 +17,7 @@ open class Acuario(
         get() = volumen * 0.9
 
     fun imprimirTamano() {
-        println(forma)
+        println("Forma: $forma")
         println("Ancho: $ancho cm  Largo: $largo cm  Alto: $alto cm")
         println("Volumen: $volumen l  Agua: $agua l (${agua / volumen * 100.0}% lleno)")
     }
@@ -27,4 +27,5 @@ open class Acuario(
         alto = (tanque / (largo * ancho)).toInt()
     }
 }
+
 
